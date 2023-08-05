@@ -1,0 +1,179 @@
+body{
+    margin:0%
+}
+#marvel{
+    height: 100px;
+    width: 200px;
+    position: relative;
+    
+}
+.navbar navbar-expand-lg navbar-light bg-light{
+    position: relative;
+    left:200px;
+}
+
+#container{
+    width: 100vw;
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
+    grid-template-rows: 20% 20% 20% 20% 20%;
+    grid-template-areas: 
+    "headr headr headr headr"
+    "main main main main"
+     "main main main main"
+    "main main main main"
+    "footr footr footr footr"
+    ;
+
+}
+
+.headr{
+    grid-area: headr;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: rgb(61, 40, 157);
+}
+#mission_inside{
+    bottom:0px;
+    position: relative;
+    left:-240px;
+}
+
+
+
+@media screen and (max-width: 600px){
+    #container{
+    grid-template-areas:
+    
+    "headr headr headr headr"
+    "main main main main"
+     "main main main main"
+    "main main main main"
+    "footr footr footr footr"
+    ;}
+
+}
+
+
+
+.sidebr{
+    grid-area: sidebr;
+}
+
+.main{
+    grid-area: main;
+    background-color:rgb(4, 110, 32);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content:space-around ;
+    
+}
+
+.footr{
+    grid-area: footr;
+   background-color: rgb(61, 40, 157);
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   justify-content: space-around;
+}
+.image5{
+    width: 260px;
+    height: 250px;
+    
+  
+}
+#mission5{
+    position: relative;
+    display:flex;
+    height: 200px;
+    width:600px;
+    margin-left: 300px;
+    animation: slide 10s infinite;
+    
+   
+}
+
+
+
+#right2:hover ~ #mission5{
+    animation: slide 10s infinite;
+
+}
+#left2:hover ~ #mission5{
+    animation: slide 10s infinite alternate ;
+
+}
+
+
+
+#cover1{
+    height:285px ;
+    width: 300px;
+    z-index: 20;
+    position: absolute;
+    top:150px;
+    left: -200px;
+    background-color: rgb(223, 74, 74);
+    
+    
+    
+}
+#cover2{
+    height:280px ;
+    width: 400px;
+    z-index: 20;
+    position: relative;
+    bottom:200px;
+    left: 1260px;
+    background-color: rgb(223, 74, 74);
+   
+    
+}
+
+
+@keyframes slide{
+    0%{right: 0;}
+    20%{right: 150px;}
+    40%{right: 300px;}
+    60%{right: 400px;}
+    80%{right: 500px;}
+    100%{right: 650px;}
+    
+}
+#left2{
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    z-index: 30;
+    left:300px;
+    bottom:130px;
+    
+     
+}
+#right2{
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    right:640px;
+    top: 280px; 
+    z-index: 30;
+}
+
+#smallGreetings{
+    z-index: 400;
+}
+#facebook{width: 75px;
+    height: 75px;}
+
+#github{width: 75px;
+        height: 75px;}
+
+form{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
