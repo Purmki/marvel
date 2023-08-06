@@ -36,7 +36,7 @@ body{
     background-color: rgb(61, 40, 157);
 }
 
-@media screen and (max-width: 600px){
+@media screen and (min-width: 600px){
     #container{
     grid-template-areas:
     
@@ -51,6 +51,7 @@ body{
 
 
 
+
 .sidebr{
     grid-area: sidebr;
 }
@@ -61,9 +62,15 @@ body{
     display: flex;
     flex-direction: column;
     align-items: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 100%;
+    color:black;
     
     
 }
+
 
 .footr{
     grid-area: footr;
@@ -84,6 +91,7 @@ body{
 
 }
 
+
 .contcont{
     display: flex;
     width: 900px;
@@ -98,11 +106,47 @@ body{
     width: 230px;
     height: 240px;
     position: relative;
-    border: 1px black solid;
+    
 
 }
+
 .year-likes{
     width: 250px;
     height: 150px;
     border: 1px black solid;
+}
+
+
+@media screen and (max-width: 600px){
+    .contcont{
+        display: flex;
+        flex-direction: column;
+        width: 35%;
+        height: 90%;
+        position: relative;
+        justify-content: space-around;
+    }
+    
+}
+@media screen and (max-width: 600px){
+    #container{
+        width: 100vw;
+        height: 605vh;
+        display: grid;
+        grid-template-columns: 25% 25% 25% 25%;
+        grid-template-rows: 8% 28% 28% 28% 8%;
+        grid-template-areas: 
+        "headr headr headr headr"
+        "main main main main"
+         "main main main main"
+        "main main main main"
+        "footr footr footr footr"
+        ;
+}
+}
+@media screen and (max-width: 600px){
+.img_responsive{
+    width: 230px;
+    height: 240px;
+}
 }

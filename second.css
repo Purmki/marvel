@@ -14,10 +14,10 @@ body{
 
 #container{
     width: 100vw;
-    height: 100vh;
+    height: 205vh;
     display: grid;
     grid-template-columns: 25% 25% 25% 25%;
-    grid-template-rows: 20% 20% 20% 20% 20%;
+    grid-template-rows: 15% 23% 24% 23% 15%;
     grid-template-areas: 
     "headr headr headr headr"
     "main main main main"
@@ -36,7 +36,7 @@ body{
     background-color: rgb(61, 40, 157);
 }
 
-@media screen and (max-width: 600px){
+@media screen and (min-width: 600px){
     #container{
     grid-template-areas:
     
@@ -61,6 +61,8 @@ body{
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
+    background-repeat: no-repeat;
+    background-size: cover;
 
 }
 
@@ -80,4 +82,32 @@ body{
 #video_container{
     width:850px;
     height: 800px;
+}
+
+@media screen and (max-width: 600px){
+    #video_container{
+        display: flex;
+        flex-direction: column;
+        width: 35%;
+        height: 90%;
+        position: relative;
+        justify-content: space-around;
+    }
+    
+}
+@media screen and (max-width: 600px){
+    #container{
+        width: 100vw;
+        height: 605vh;
+        display: grid;
+        grid-template-columns: 25% 25% 25% 25%;
+        grid-template-rows: 8% 28% 28% 28% 8%;
+        grid-template-areas: 
+        "headr headr headr headr"
+        "main main main main"
+         "main main main main"
+        "main main main main"
+        "footr footr footr footr"
+        ;
+    }
 }
