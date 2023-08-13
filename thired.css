@@ -1,5 +1,6 @@
 body{
-    margin:0%
+    margin:0%;
+    overflow-x: hidden;
 }
 #marvel{
     height: 100px;
@@ -13,8 +14,10 @@ body{
 }
 
 #container{
+    background-image: url("https://www.hollywoodreporter.com/wp-content/uploads/2015/02/avengers_age_of_ultron_poster_detail.jpg?w=3000");
+    background-repeat: no-repeat;
     width: 100vw;
-    height: 100vh;
+    height: 110vh;
     display: grid;
     grid-template-columns: 25% 25% 25% 25%;
     grid-template-rows: 20% 20% 20% 20% 20%;
@@ -58,7 +61,6 @@ body{
 
 .main{
     grid-area: main;
-    background-image: url(https://www.hollywoodreporter.com/wp-content/uploads/2015/02/avengers_age_of_ultron_poster_detail.jpg?w=3000);
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -67,6 +69,7 @@ body{
     background-position: center;
     height: 100%;
     color:black;
+    width: 100%;
     
     
 }
@@ -149,4 +152,10 @@ body{
     width: 230px;
     height: 240px;
 }
+}
+.like{
+    width: 20px;
+    height: 15px;
+    mix-blend-mode: color-burn;
+    
 }
